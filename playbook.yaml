@@ -1,0 +1,6 @@
+- hosts:
+    - 192.168.1.98
+    - localhost
+  tasks:
+    - action: apt update_cache=yes cache_valid_time=3600
+    - action: apt pkg=apache2 state=present
