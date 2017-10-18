@@ -3,4 +3,6 @@
     - localhost
   tasks:
     - name: upgrade all packages
-      yum: name: '*' state: latest
+      yum: 
+        name: '*' 
+        state: latest
